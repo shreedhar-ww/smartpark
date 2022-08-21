@@ -1,0 +1,10 @@
+﻿/*states, content and header*/
+.jqx-widget-orange{border-color:#FF5811}
+.jqx-widget-content-orange{color:#313F48; border-color:#FF5811;border-top:0;}
+.jqx-fill-state-normal-orange, .jqx-widget-header-orange, .jqx-menu-vertical-orange {border-color: #cbcbcb;background:#ffffff;color: #313F48;}
+.jqx-fill-state-pressed-orange.jqx-fill-state-focus{background:#ffffff; /* Old browsers */border-color: #FF5811;color: #313F48;}
+
+/*icons*/
+.jqx-grid-column-menubutton-orange, .jqx-grid-column-sortdescbutton-orange, .jqx-expander-arrow-top-orange, .jqx-window-collapse-button-collapsed-orange, .jqx-menu-item-arrow-down-orange, .jqx-menu-item-arrow-down-selected-orange, .jqx-menu-item-arrow-down-orange, .jqx-icon-arrow-down-orange, .jqx-icon-arrow-down-hover-orange, .jqx-icon-arrow-down-selected-orange{background-image: url(../../../img/arrowd1.png);background-repeat:no-repeat;background-position:center}
+
+

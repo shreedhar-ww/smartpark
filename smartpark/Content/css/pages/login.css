@@ -1,0 +1,123 @@
+/***
+Login page
+***/
+
+/* logo page */
+.greybox {background:#A1A5A6;height: 50px;width: 100%;display: none;}
+.greybox.visibleGreyBox{display: block;}
+.login .logo {width: 247px;margin: 90px auto 30px;padding: 15px;text-align: center;} 
+.login .content {width: 390px;margin: 0 auto; margin-bottom: 0px;padding: 30px;  padding-top: 20px;  padding-bottom: 15px;min-height:inherit;/* 360px */overflow: hidden;}
+.login .content h3 {color: #ff5811;font-size:21px;font-family: 'proxima_nova_alt_cn_bold';text-align: center;}
+.login .content h4  {color: #555;}
+.login .content p {color: #313f48;font-family: 'proxima_nova_semibold';text-align:center;margin: 0 0 17px;}
+.login .control-label{float:left; color:#313f48; font-size:13px;font-family: 'proxima_nova_semibold';margin-bottom: 7px;}
+.login .content .login-form,
+.login .content .forget-form {padding: 0px;margin: 0px;}
+.login .content .m-wrap {width: 378px;}
+.login .content .input-icon {}
+.login .content .control-group {margin-bottom: 20px !important;}
+.login .content .input-icon .m-wrap {margin: 0px !important;}
+.login .content .forget-form, .login .content .forget-form2 {display: none;}
+.login .content .register-form {display: none;}
+.login .content .form-title {font-weight: 300;margin-bottom: 25px;}
+.login .content .form-actions {background:none;clear: both;border: 0;padding: 30px 30px 25px 30px;}
+.login .content .forget-form .form-actions,
+.login .content .forget-form2 .form-actions {border: 0;margin-bottom: 0;padding:30px 30px 0;}
+.login .content .register-form .form-actions {border: 0;margin-bottom: 0;padding-bottom: 0px;}
+.login .content .form-actions .checkbox {margin-top: 8px;display: inline-block;}
+.logout_success .content .form-actions .btn,
+.login .content .form-actions .btn {display: block;margin: 0 auto;}
+.login .content .forget-username,
+.login .content .forget-password { float:right;}
+.login .content #forget-username,
+.login .content #forget-password {color:#a1a5a6;font-family: 'proxima_nova_semibold';line-height: 22px;}
+.logout_success .login_btn,
+.login .login_btn,
+.login .reset_btn{width:85px; height:35px;}
+.logout_success .copyright,
+.login .copyright {text-align: center;width: 76%;margin: 0 auto; padding:15px 12%;color: #b2b2b2;font-size: 11px;line-height: 15px; position: fixed; bottom: 0;left:0;}
+.login #back-btn, .login #back-btn2{ background:none; text-decoration:underline;margin-top:40px;font-size: 16px;}
+.login #back-btn:hover, .login #back-btn2:hover{ background:none; text-decoration:none;}
+.login .ver-inline-menu {background: none;border-bottom: 1px solid #CBCBCB;}
+.login .select_an_acc .ver-inline-menu li{padding: 0 10px;border-top: 1px solid #CBCBCB;}
+.login .select_an_acc .ver-inline-menu li a {background: none;border-left: 0;color: #313f48;display: block;font-size: 16px;height: 50px; line-height: 50px;font-family: 'proxima_nova_alt_condensedLt';}
+.login .select_an_acc .ver-inline-menu li a:hover,
+.login .select_an_acc .ver-inline-menu li a.active,
+.login .select_an_acc .ver-inline-menu li a:focus{font-family: 'proxima_nova_alt_cn_bold';background: url("../../img/arrow1.png") no-repeat right center !important; }
+.login .select_an_acc p{margin: 15px 0 30px;}
+.login .account_options p a{color: #313f48;font-family: 'proxima_nova_semibold';height: 17px; display: block;margin: 0 auto;width: 100px;}
+.login .account_options p a:hover{color:#000000; font-size: 14px;}
+
+
+.change_password .logo {width: 247px;margin:25px auto 0;padding: 15px;text-align: center;} 
+.change_password .content {width: 600px;margin: 0 auto; margin-bottom: 0px;padding: 30px;  padding-top: 20px;  padding-bottom: 15px;min-height: 335px;}
+.change_password .content h3 {color: #ff5811;font-size:21px;font-family: 'proxima_nova_alt_cn_bold';text-align: center;}
+.change_password .content h4  {color: #555555;font-size: 15px;margin: 0;padding: 0 0 10px 25px;font-family: 'proxima_nova_alt_cn_bold';}
+.change_password .content p {color: #313f48;font-family: 'proxima_nova_semibold';text-align:center;margin: 0 0 17px;}
+.change_password .control-label{float:left; color:#313f48; font-size:13px;font-family: 'proxima_nova_semibold';margin-bottom: 7px;}
+.change_password .content .login-form,
+.change_password .content .forget-form {padding: 0px;margin: 0px;}
+.change_password .content .m-wrap {width: 378px;}
+.change_password .content .input-icon {}
+.change_password .content .control-group {margin-bottom: 20px !important;}
+.change_password .content .input-icon .m-wrap {margin: 0px !important;}
+.change_password .content .forget-form, .login .content .forget-form2 {display: none;}
+.change_password .content .register-form {display: none;}
+.change_password .content .form-title {font-weight: 300;margin-bottom: 25px;}
+.change_password .content .form-actions {float: none;margin: 30px auto 20px;padding: 30px 30px 25px;width: 240px;}
+.change_password .content .forget-form .form-actions,
+.change_password .content .forget-form2 .form-actions {border: 0;margin-bottom: 0;padding:30px 30px 0;}
+.change_password .content .register-form .form-actions {border: 0;margin-bottom: 0;padding-bottom: 0px;}
+.change_password .content .form-actions .checkbox {margin-top: 8px;display: inline-block;}
+.change_password .content .form-actions .btn {display: block;margin: 0 auto;}
+.change_password .content .form-actions .btn {display: inline-block;margin:0;}
+.change_password .content .form-actions .btn.btn_change_pass{float:left;}
+.change_password .content .form-actions .btn.cancel{float: right;}
+.change_password .content .forget-username,
+.change_password .content .forget-password { float:right;}
+.change_password .content #forget-username,
+.change_password .content #forget-password {color:#a1a5a6;font-family: 'proxima_nova_semibold';line-height: 22px;}
+.change_password .copyright {text-align: center;width: 76%;margin: 0 auto; padding: 30px 12% 30px;color: #b2b2b2;font-size: 11px;line-height: 15px; position: fixed; bottom: 0;}
+.change_password #back-btn, .login #back-btn2{ background:none; text-decoration:underline;margin-top:40px;font-size: 16px;}
+.change_password #back-btn:hover, .login #back-btn2:hover{ background:none; text-decoration:none;}
+.change_password .ver-inline-menu {background: none;border-bottom: 1px solid #CBCBCB;}
+.change_password .select_an_acc .ver-inline-menu li{padding: 0 10px;border-top: 1px solid #CBCBCB;}
+.change_password .select_an_acc .ver-inline-menu li a {background: none;border-left: 0;color: #313f48;display: block;font-size: 16px;height: 50px; line-height: 50px;font-family: 'proxima_nova_alt_condensedLt';}
+.change_password .select_an_acc .ver-inline-menu li a:hover{font-family: 'proxima_nova_alt_cn_bold';background: url("../../img/arrow1.png") no-repeat right center !important; }
+.change_password .select_an_acc p{margin: 15px 0 30px;}
+.change_password .account_options p a{color: #313f48;font-family: 'proxima_nova_semibold';height: 17px; display: block;}
+.change_password .account_options p a:hover{color:#000000; font-size: 14px;}
+
+
+.logout_success .logo{width: 247px;margin: 95px auto 20px;padding: 15px;text-align: center;} 
+.logout_success .content h3 {color: #ff5811;font-size:16px;font-family: 'proxima_nova_alt_cn_bold';text-align: center;}
+.logout_success .content p {color: #313f48;font-family: 'proxima_nova_light';text-align:center;margin: 0 0 17px; font-size: 13px;}
+.logout_success .content{width: 550px;margin: 0 auto; margin-bottom: 0px;padding:0;min-height: 380px;}
+.success_msg{ padding: 50px 0 50px; background:#ffffff; border:1px solid #cbcbcb; height: 100px;border-radius: 2px;box-shadow: 1px 1px 5px #CDCDCD;position: relative;}
+.logout_success .form-actions{background:none;clear: both;border: 0;padding: 35px 30px 25px 30px; margin-top: 0;}
+.success_msg a.close {background: url("../../img/remove-icon.png") no-repeat !important;display: block;height: 15px;margin-right: 0;margin-top: 0;width: 15px;position: absolute;right: 9px;top: 9px;padding: 0;opacity: 1;}
+.success_msg a.close:hover{background: url("../../img/remove-icon_h.png") no-repeat !important;}
+.hide_ondesk{display: none;}
+.show_ondesk{display: block;}
+#select_acc #ddlProviderList{font-size: 13px;width: 392px;color: #313f48;}
+#select_acc #ddlProviderList option {color: #313f48;}
+#select_acc #ddlProviderList option:focus,
+#select_acc #ddlProviderList option:active,
+#select_acc #ddlProviderList option:hover{font-family: 'proxima_nova_alt_cn_bold'; background:#ffffff !important;color: #313f48;}
+.select_outer .sel_design {font-family: 'proxima_nova_alt_condensedLt';background: url(../../img/arrowd1.png) no-repeat right center #FFFFFF;color: #313f48;font-size: 16px;height:40px;line-height:40px;text-indent: 15px;}
+.pass_instruction {background: #FFFFFF;border: 1px solid #CBCBCB;border-radius: 2px;box-shadow: 1px 1px 5px #CDCDCD;height: auto;padding: 10px 0;position: relative;margin: 0 auto 15px;width:450px;}
+.pass_instruction ul{list-style: disc inside none;margin: 0 25px 10px;}
+.change_password .control-group {margin: 0 auto 10px;width: 390px;}
+
+@media (max-width: 480px) {
+  /***
+  Login page
+  ***/
+.login .logo {margin-top:10px;}
+.login .content {padding: 30px; width: 222px;}
+.login .content h3 {font-size: 22px;}
+.login .content .m-wrap {width: 208px;}
+.login .checkbox {font-size: 13px;}
+
+}
+

@@ -1,0 +1,19 @@
+﻿
+
+.ajaxGrid td
+{
+    max-width: 35em;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.email
+{
+    width:700px;
+}
+.cwidth
+{
+    width:800px;
+}
+
+

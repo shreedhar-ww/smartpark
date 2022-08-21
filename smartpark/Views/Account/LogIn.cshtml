@@ -1,0 +1,138 @@
+﻿@model SmartPark.Entity.User
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Smart Parking | Login</title>
+    <meta content="width=device-width" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="~/Content/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="~/Content/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style-metro.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <script src="~/Scripts/CustomScript/css_browser_selector.js"></script>
+    @*<link href="~/Content/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />*@
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="~/Content/css/pages/login.css" rel="stylesheet" type="text/css" />
+@*    <link href="~/Content/css/skeleton.css" rel="stylesheet" type="text/css" />*@
+
+    @*  <link href="~/Content/Site.css" rel="stylesheet" />*@
+
+    @Styles.Render("~/Content/css")
+    <!-- END PAGE LEVEL STYLES -->
+    @Scripts.Render("~/bundles/jquery")
+ @*    @Scripts.Render("~/bundles/jqueryui")*@
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="icon" href="~/Content/img/favicon.ico" type="image/x-icon">
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="login">
+
+    <div class="greybox visibleGreyBox"></div>
+
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <img src="~/Content/img/logo.png" alt="SmartParkLogo" />
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+
+        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-vertical login-form" }))
+        {
+            @Html.AntiForgeryToken()         
+          
+        
+            <!-- BEGIN LOGIN FORM -->
+            <div class="control-group">
+                @Html.LabelFor(m => m.UserName, new { @class = "control-label" })
+                <div class="forget-username">
+                    <a href="/Account/ForgotUsername" class="" id="forget-username">I forgot</a>
+                </div>
+                <div class="controls">
+                    <div class=" left">
+                        @*<input class="m-wrap" type="text" name="username" />*@
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "m-wrap", tabindex = 1, maxlength = "40" })
+                        @Html.ValidationMessageFor(m => m.UserName)
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                <div class="forget-password">
+                    <a href="/Account/ForgotPassword" class="" id="forget-password">I forgot</a>
+                </div>
+                <div class="controls">
+                    <div class="left">
+                        @*<input class="m-wrap" type="password" name="password" />*@
+                        @Html.PasswordFor(m => m.Password, new { @class = "m-wrap", tabindex = 2, maxlength = "15" })
+                        @Html.ValidationMessageFor(m => m.Password)
+                    </div>
+                </div>
+                <div class="editor-field">
+
+                    @if (!ViewData.ModelState.IsValid)
+                    {       
+                        <span class="field-validation-error">
+                            @ViewData.ModelState["UsrnamePassword"].Errors[0].ErrorMessage</span>
+                    }
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn orange login_btn" tabindex="3">
+                    Log in   
+                </button>
+            </div>
+            <!-- END LOGIN FORM -->            
+        }
+    </div>
+    <!-- BEGIN COPYRIGHT -->
+    <div class="copyright">
+        &copy; Smart Parking Ltd, also trading as Town and City Parking, is registered in Scotland, registered number SC138255. The ultimate parent company in the UK is Smart Parking (UK) Limited, also registered in the UK registered number SC413479. The Registered Office of both Companies is 5 South Inch Business Centre, Shore Road, Perth PH2 8BW.
+    </div>
+    <!-- END COPYRIGHT -->
+</body>
+<!-- END BODY -->
+</html>
+<script>
+    $(document).ready(function () {
+        //set focus to 1st input field
+        $("#UserName").focus();
+
+        $(".input-validation-error").val("");
+
+        //$(document).ready(function () {
+        //    $('#Password').live("paste", function (e) {
+        //        e.preventDefault();
+        //    });      
+        //});
+
+        //$("#Password").keypress(function (e) {
+        //    if (e.keyCode == 32) {
+        //        // user has pressed space               
+        //        e.preventDefault();
+        //    }
+        //});
+    });
+</script>

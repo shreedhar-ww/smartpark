@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace smartpark
+namespace SmartPark
 {
     public class BundleConfig
     {

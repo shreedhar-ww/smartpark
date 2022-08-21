@@ -1,24 +1,24 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+body {font-size: .85em;font-family: 'proxima_nova_rgregular';/*font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;*/color: #232323;background-color: #fff;}
+header, footer, nav, section {display: block;}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {border:0;padding:0;margin:0;}
+legend {}
+textarea {min-height: 75px;}
+.editor-label {margin: 1em 0 0 0;}
+.editor-field {margin: 0.5em 0 0 0;}
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {display: block;color: #ff0000;float: none;width:auto;clear:both;font-size: 12px;font-family: 'proxima_nova_light';line-height: 10px;margin:3px 0 0;}
+/*.field-validation-error {display: block;color: #ff0000;float: none;width:auto;clear:both;font-size: 12px;font-family: 'proxima_nova_light';}*/
+.field-validation-valid {display: none;}
+.input-validation-error {border: 1px solid #ff0000 !important;background-color: #fee !important;}
+/*.input-validation-error {border: 1px solid #f00 !important;background-color: #fee !important;}*/
+.validation-summary-errors {font-weight: bold;color: #ff0000;}
+/*.validation-summary-errors {font-weight: bold;color: #f00;}*/
+.validation-summary-valid {display: none;} 
+.Time {
+    white-space: nowrap;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}

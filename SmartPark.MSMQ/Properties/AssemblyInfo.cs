@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SmartPark.MSMQ")]
+[assembly: AssemblyTitle("SmartPark.EmailModule")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("SmartPark.MSMQ")]
+[assembly: AssemblyProduct("SmartPark.EmailModule")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a496fd0b-b972-44eb-bdeb-e6f33b5d99f2")]
+[assembly: Guid("0378acb2-b6bb-48ae-a45d-dc777cfcd5e6")]
 
 // Version information for an assembly consists of the following four values:
 //

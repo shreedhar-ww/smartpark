@@ -1,0 +1,117 @@
+@media only screen and (max-width: 980px) {	
+/* ###### */
+.logout_success .copyright, .login .copyright {position: static;}
+#paymenthistory_table.table-bordered th, 
+.parking_history table.table-bordered th {
+    border-left: 1px solid #DDDDDD;
+    border-top: 0 none;
+}
+#paymenthistory_table.table-bordered th:last-child, 
+.parking_history table.table-bordered th:last-child {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#paymenthistory_table.table-bordered tr th:first-child, 
+.parking_history.table-bordered tr th:first-child {
+    border-left: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+}
+#paymenthistory_table.table-bordered tr td:last-child {
+    border-left: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+/* ###### */
+}
+
+#paymenthistory_table.table-bordered tr:last-child td:last-child {
+    border-right: 1px solid #DDDDDD;
+}
+#paymenthistory_table, .parking_history table {
+    border-right: 0 none;}
+
+
+
+.payment_gateway_setup .input-box {
+    width: 50%;
+}
+
+}
+
+@media only screen and (max-width: 800px) {	
+/* ###### */
+.hide_ondesk{display: block;}
+.show_ondesk{display: none;}
+.change_password .content {padding: 20px 3% 15px;width: 94%;}
+.header .navbar-inner {height: auto;}
+.flip-scroll table {border-left: 0;float: left;width: 100%;}
+.flip-scroll th:last-child, .flip-scroll td:last-child {border-bottom: 0 none;}
+.table-bordered th {padding: 6.5px 10px;}
+.table-bordered tr:last-child td {border-right: 1px solid #DDDDDD;border-bottom: 0;}
+.table-bordered tr td:last-child {border-left: 0;border-right: 0 none;}
+.flip-scroll th:last-child, 
+.flip-scroll td:last-child {border-left: 0 none;border-top: 1px solid #DDDDDD;}
+.flip-scroll tbody tr{ border-left: 0 none;}
+.flip-scroll td {border-left: 1px solid #DDDDDD;}
+.backoffice_table .btn_box.edit_section .btn_tip {left: -5px;top:-102px;background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+.btn_box.edit_section .btn_tip .inner_c {background: url("../img/tabtips_bottom2.png") no-repeat scroll left bottom;}
+.btn_box.edit_section .tiparrow {display: none;}
+.btn_box.edit_section .btn_tip .closetip {left: auto;right: 10px;top: 17px;}
+.page-configuration .page-title{width: 100%;}
+.portlet-tabs .nav-tabs {top: 0;margin-right: 0;}
+.edit_section.btn_box .btn_tip {padding-top: 27px;}
+.button_section.btn_box .btn_tip {padding-top: 20px;}
+.table-bordered tr td.edit, .table-bordered tr td.active_state, .table-bordered tr th.active_state {text-align: left;}
+#service_providers_table .btn_box.edit_section .btn_tip {left: -5px;top:-102px;
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#users_table .btn_box.edit_section .btn_tip {left: -5px;top:-102px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#documentation_table .btn_box.edit_section .btn_tip {left: -5px;top:-90px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#pricing_table .btn_box.edit_section .btn_tip {left: -5px;top:-90px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#systemlist_table .btn_box.edit_section .btn_tip {left: -5px;top:-90px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#search_subscribers_table .btn_box.edit_section .btn_tip {left: -5px;top:-155px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+.modules_displayed .controls {width:50%;}
+.payment_gateway_setup .input-box {width: 100%;}
+.payment_gateway_setup .controls{ margin-bottom:25px;}
+.t_maxstay .hrs {float: none;}
+.page-cms .form-horizontal .controls {margin-left: 0;}
+.payment_gateway_setup .control-group {margin-bottom: 0;}
+
+
+/* ###### */
+}
+
+@media only screen and (max-width:700px){
+/* ###### */
+.page-title{text-align: center; margin: 0 0 15px;}
+.tabbable .nav {margin-bottom: 50px;}
+.welcome_back {float: none;margin: 5px auto 10px;text-align: center;}
+.dashboard-stat{margin:0 auto 25px;float: none;}	
+.dashboard-stat .details {padding-right: 0;}
+/* ###### */
+}
+
+@media only screen and (max-width:640px){
+/* ###### */
+.logout_success .content {padding: 0 5%;width: 90%;}
+
+.change_password .content .m-wrap {
+    width: 95%;
+}
+
+/* ###### */
+}
+
+@media only screen and (max-width:480px){
+/* ###### */
+.pass_instruction {width: 92%; padding:10px 2%;}
+.change_password .control-group {margin: 0 auto 10px;width: 96%;}
+.change_password .content .m-wrap {width: 93%;}
+.page-workflow #work_flow .form-actions{position: static;}
+.session-timeout .content {padding: 20px 5% 15px;width: 90%;}
+.session_timeout {padding: 50px 5%;width: 90%;}
+.session-timeout .content .m-wrap {width: 95%;}
+/* ###### */
+}

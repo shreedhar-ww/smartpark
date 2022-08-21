@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+}
+
+
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8">
+    <title>Smart Parking | Logout Success</title>
+    <meta name="viewport" content="width=device-width">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="~/Content/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style-metro.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="~/Content/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="~/Content/css/pages/login.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/skeleton.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!-- END PAGE LEVEL STYLES -->
+                @*<link rel="icon" href="~/Content/img/favicon.ico" type="image/x-icon">*@
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="logout_success">
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <img alt="Smart Park Logo" src="~/Content/img/logo.png">
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+        <!-- BEGIN LOGout success -->
+        <div class="success_msg">
+            <h3>Error !!!</h3>
+            <p>@ViewBag.ErrorMessage</p>
+            <p>Please log in back to continue</p>
+            @*<a href="login.html" class="close"></a>*@
+        </div>
+        <div class="form-actions">
+            <input type="button" id="btnLogIn" value="Log in" onclick=" window.location = '/Account/Login'" class="btn orange login_btn" />
+        </div>
+        <!-- END LOGout success -->
+    </div>
+    <!-- END LOGIN -->
+    <!-- BEGIN COPYRIGHT -->
+    <div class="copyright">
+        © Smart Parking Ltd, also trading as Town and City Parking, is registered in Scotland, registered number SC138255. The ultimate parent company in the UK is Smart Parking (UK) Limited, also registered in the UK registered number SC413479. The Registered Office of both Companies is 5 South Inch Business Centre, Shore Road, Perth PH2 8BW.
+    </div>
+
+
+    <!-- END BODY -->
+</body>
+</html>
+<script src="~/Scripts/CustomScript/css_browser_selector.js"></script>
+@Scripts.Render("~/bundles/modernizr")

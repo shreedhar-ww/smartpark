@@ -1,0 +1,148 @@
+@media only screen and (max-width: 980px) {	
+/* ###### */
+#paymenthistory_table.table-bordered th, 
+.parking_history table.table-bordered th {
+    border-left: 0;
+    border-top: 1px solid #DDDDDD;
+    /* changed for Subscriber Parking History */
+}
+#paymenthistory_table.table-bordered th:last-child, 
+.parking_history table.table-bordered th:last-child {
+    border-bottom: 0;
+    border-right: 1px solid #DDDDDD;
+}
+
+#paymenthistory_table.table-bordered tr th:first-child, 
+.parking_history.table-bordered tr th:first-child {
+    border-left: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+}
+#paymenthistory_table.table-bordered tr td:last-child {
+    border-bottom: 0 none;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+/* ###### */
+}
+#paymenthistory_table.table-bordered tr:last-child td:last-child {border-right: 1px solid #DDDDDD;border-bottom: 1px solid #DDDDDD;}
+#paymenthistory_table, .parking_history table {border-right: 0 none;}
+.payment_gateway_setup .input-box {width: 50%;}
+/*.container-fluid{padding: 30px 23px;}*/
+.dashboard-stat .details .desc {width: 90%;}
+#add_service_provider_popup, #edit_service_provider_popup, #edit_service_provider_popup2 {
+    padding: 0;
+    width:auto !important;
+}
+
+.popup-title {padding: 0 0 5px;}
+.popup-title h3 { margin: 0 0 20px;}
+
+
+}
+
+@media only screen and (max-width: 800px) {	
+/* ###### */
+.hide_ondesk{display: block;}
+.show_ondesk{display: none;}
+.change_password .content {padding: 20px 3% 15px;width: 94%;}
+.header .navbar-inner {height: auto;}
+
+#search_subscribers_form.dataTables_filter .search_btn {
+    margin: 31px 0 15px;padding: 8px 0;
+}
+
+.back_office .dataTables_filter .search_btn {
+    margin: 31px 0 15px;
+}
+.slimScroll{max-height:450px;}    
+/*
+.flip-scrol_l table {border-left: 0;float: left;width: 100%;}
+.flip-scrol_l th:last-child, .flip-scrol_l td:last-child {border-bottom: 0 none;}
+.table-bordered th {padding: 6.5px 10px;}
+.table-bordered tr:last-child td {border-right: 1px solid #DDDDDD;border-bottom: 0;}
+.table-bordered tr td:last-child {border-left: 0;border-right: 0 none;}
+.flip-scrol_l th:last-child, 
+.flip-scrol_l td:last-child {border-left: 0 none;border-top: 1px solid #DDDDDD;}
+.flip-scrol_l tbody tr{ border-left: 0 none;}
+.flip-scrol_l td {border-left: 1px solid #DDDDDD;}
+
+.backoffice_table .btn_box.edit_section .btn_tip {left: -5px;top:-102px;background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+.btn_box.edit_section .btn_tip .inner_c {background: url("../img/tabtips_bottom2.png") no-repeat scroll left bottom;}
+.btn_box.edit_section .tiparrow {display: none;}
+.btn_box.edit_section .btn_tip .closetip {left: auto;right: 10px;top: 17px;}
+.edit_section.btn_box .btn_tip {padding-top: 27px;}
+.button_section.btn_box .btn_tip {padding-top: 20px;}
+.table-bordered tr td.edit, .table-bordered tr td.active_state, .table-bordered tr th.active_state {text-align: left;}
+#service_providers_table .btn_box.edit_section .btn_tip {left: -5px;top:-102px;
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#users_table .btn_box.edit_section .btn_tip {left: -5px;top:-102px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#documentation_table .btn_box.edit_section .btn_tip {left: -5px;top:-90px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#pricing_table .btn_box.edit_section .btn_tip {left: -5px;top:-90px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#systemlist_table .btn_box.edit_section .btn_tip {left: -5px;top:-90px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+#search_subscribers_table .btn_box.edit_section .btn_tip {left: -5px;top:-155px; 
+background: url("../img/tabtips_top2.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);}
+*/
+.page-configuration .page-title{width: 100%;}
+.portlet-tabs .nav-tabs {top:-35px;margin-right: 0;}
+.modules_displayed .controls {width:50%;}
+.payment_gateway_setup .input-box {width: 100%;}
+.payment_gateway_setup .controls{ margin-bottom:25px;}
+.t_maxstay .hrs {float: none;}
+.page-cms .form-horizontal .controls {margin-left: 0;}
+.payment_gateway_setup .control-group {margin-bottom: 0;}
+.page-cms .form-horizontal .controls {margin-left: 0;width:55%;}
+
+/* ###### */
+}
+
+@media only screen and (max-width:700px){
+/* ###### */
+.page-title{text-align: left; margin: 0 0 15px;}
+.tabbable .nav {margin-bottom: 50px;}
+.welcome_back {float: none;margin: 5px auto 10px;text-align: center;}
+.dashboard-stat{margin:0 auto 25px;float: none;}	
+.dashboard-stat .details {padding-right: 0;}
+.page-cms .form-horizontal .controls {margin-left: 0;width:50%;}
+.content_mgnt .btn-file #image_file{opacity: 0; filter: alpha(opacity=00);width: 390px;height:35px;}
+/* ###### */
+}
+
+@media only screen and (max-width:640px){
+/* ###### */
+.logout_success .content {padding: 0 5%;width: 90%;}
+.logout_success .copyright, .login .copyright {position: static;}
+.change_password .content .m-wrap {width: 95%;}
+.page-cms .form-horizontal .controls {margin-left: 0;width: 99%;}
+.slimScroll{max-height:265px;}
+#pricing_config_popup, #edit_pricing_config_popup,
+#setup_configuration, #edit_configuration,#edit_backoffice,
+#doc_config_popup, #edit_doc_config_popup,
+#add_new_user, #edit_new_user{padding:0 5px;width: auto !important;}
+/* ###### */
+}
+
+@media only screen and (max-width:480px){
+/* ###### */
+.pass_instruction {width: 92%; padding:10px 2%;}
+.change_password .control-group {margin: 0 auto 10px;width: 96%;}
+.change_password .content .m-wrap {width: 93%;}
+.page-workflow #work_flow .form-actions{position: static;}
+.session-timeout .content {padding: 20px 5% 15px;width: 90%;}
+.session_timeout {padding: 50px 5%;width: 90%;}
+.session-timeout .content .m-wrap {width: 95%;}
+#cke_HtmlContent{width:95% !important;}    
+.slimScroll{max-height:230px;}
+   
+/* ###### */
+}
+
+@media only screen and (min-device-width:481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+
+.logout_success .copyright, .login .copyright{ position: static;}
+
+
+}

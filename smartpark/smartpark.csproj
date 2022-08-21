@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>smartpark</RootNamespace>
-    <AssemblyName>smartpark</AssemblyName>
+    <RootNamespace>SmartPark</RootNamespace>
+    <AssemblyName>SmartPark</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -131,12 +132,15 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\Webgridsetting.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\style.zip" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -148,7 +152,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -162,6 +168,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutAgentKiosk.cshtml" />
+    <Content Include="Views\Account\ChangeForgotPassword.cshtml" />
+    <Content Include="Views\Account\DisplayErrorMessage.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotUsername.cshtml" />
+    <Content Include="Views\Account\LinkExpired.cshtml" />
+    <Content Include="Views\Account\LogIn.cshtml" />
+    <Content Include="Views\Account\LogOff.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\_sessiontimeout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -184,6 +200,18 @@
     <ProjectReference Include="..\SmartPark.Data\SmartPark.Data.csproj">
       <Project>{45988e86-a570-47b5-a411-9ce8f1ebcc33}</Project>
       <Name>SmartPark.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPark.Entity\SmartPark.Entity.csproj">
+      <Project>{231936a6-b9ad-4c6e-a4e5-1d0d7c829db2}</Project>
+      <Name>SmartPark.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPark.Helper\SmartPark.Helper.csproj">
+      <Project>{6a019d2c-f203-43d5-bed9-4281152a6fa7}</Project>
+      <Name>SmartPark.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPark.MSMQ\SmartPark.MSMQ.csproj">
+      <Project>{fff088c8-b8ed-421e-bde9-384cb41abac8}</Project>
+      <Name>SmartPark.MSMQ</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

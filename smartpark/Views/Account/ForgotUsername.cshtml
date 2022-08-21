@@ -1,0 +1,106 @@
+﻿@model SmartPark.Entity.UserModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Smart Parking | Login</title>
+    <meta content="width=device-width" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="~/Content/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style-metro.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="~/Content/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link href="~/Content/css/pages/login.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/skeleton.css" rel="stylesheet" type="text/css" />
+     <link href="~/Content/Site.css" rel="stylesheet" />
+    <!-- END PAGE LEVEL STYLES -->
+    @*<link rel="shortcut icon" href="favicon.ico" />*@
+    <script src="~/Scripts/CustomScript/css_browser_selector.js"></script>
+     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="login">
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <img src="~/Content/img/logo.png" alt="SmartParkLogo" />
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <form class="form-vertical forget-form2">
+                <h3 class="">Username Reset</h3>
+                <p>@ViewBag.Message</p>
+                <p style="color:green">@ViewBag.SuccessMessage</p>
+                <div class="control-group">
+                    @Html.LabelFor(model => model.Email, new { @class = "control-label" })
+                    <div class="controls">
+                        <div class="left">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "m-wrap", name = "email", tabindex = 1 ,@maxlength="254"})
+                            @*@Html.ValidationMessageFor(m => m.Email)*@
+                            <span id="spanEmail" class="field-validation-error" data-valmsg-for="Email">@ViewBag.ErrorMessage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn orange reset_btn">
+                        Reset
+                    </button>
+                   <button type="button" id="back-btn" onclick=" window.location = '/Account/Login'" class="btn">
+                        Back to log in
+                    </button>
+                </div>
+            </form>
+        }
+    </div>
+
+
+    <!-- END LOGIN -->
+    <!-- BEGIN COPYRIGHT -->
+    <div class="copyright">
+        &copy; Smart Parking Ltd, also trading as Town and City Parking, is registered in Scotland, registered number SC138255. The ultimate parent company in the UK is Smart Parking (UK) Limited, also registered in the UK registered number SC413479. The Registered Office of both Companies is 5 South Inch Business Centre, Shore Road, Perth PH2 8BW.
+    </div>
+    <!-- END COPYRIGHT -->
+
+
+</body>
+<!-- END BODY -->
+</html>
+
+<script>
+    $(document).ready(function () {
+        //set focus to 1st input field
+        $("#Email").focus();
+       
+
+    });
+</script>
+
+
+
+
+
+

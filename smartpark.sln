@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.2092
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smartpark", "smartpark\smartpark.csproj", "{40DD39FE-EC41-4D1C-9AD8-CED877FFAA4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPark", "smartpark\SmartPark.csproj", "{40DD39FE-EC41-4D1C-9AD8-CED877FFAA4D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPark.Entity", "SmartPark.Entity\SmartPark.Entity.csproj", "{231936A6-B9AD-4C6E-A4E5-1D0D7C829DB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPark.Helper", "SmartPark.Helper\SmartPark.Helper.csproj", "{6A019D2C-F203-43D5-BED9-4281152A6FA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPark.Data", "SmartPark.Data\SmartPark.Data.csproj", "{45988E86-A570-47B5-A411-9CE8F1EBCC33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPark.MSMQ", "SmartPark.MSMQ\SmartPark.MSMQ.csproj", "{FFF088C8-B8ED-421E-BDE9-384CB41ABAC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{45988E86-A570-47B5-A411-9CE8F1EBCC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45988E86-A570-47B5-A411-9CE8F1EBCC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45988E86-A570-47B5-A411-9CE8F1EBCC33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF088C8-B8ED-421E-BDE9-384CB41ABAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF088C8-B8ED-421E-BDE9-384CB41ABAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF088C8-B8ED-421E-BDE9-384CB41ABAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF088C8-B8ED-421E-BDE9-384CB41ABAC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
